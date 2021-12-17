@@ -68,7 +68,7 @@ const App = () => {
       const topRatedSeriesFromServer = await fetchTopRatedSeries()
       setTopRatedSeries(topRatedSeriesFromServer)
 
-      const showcaseData = await fetchSerie(130392)
+      const showcaseData = await fetchSerie(process.env.REACT_APP_SHOWCASE_ID)
       setShowcaseData(showcaseData)
 
       const trendingData = await fetchTrending("all", "week")

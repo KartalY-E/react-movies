@@ -39,7 +39,6 @@ const MovieDetails = () => {
                     &nbsp;{data.vote_average}
                 </div>
                 {genres.map((genre) => <div className='genre' key={genre.id}>{genre.name}</div>)}
-
             </section>
             <p className='p-1 font-semibold'>
                 {data.overview}
